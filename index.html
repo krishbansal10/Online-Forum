@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="index.html" class="logo">
+                <img src="./logo.png" alt="logo">
+            </a>
+
+            <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search">
+            </div>
+
+            <ul>
+                <li>
+                    <a href="#" class="active-link">
+                        <i class="fa-solid fa-house"></i> <span>Home</span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-bell"></i> <span>Notifications</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="navbar-right">
+            <button> &nbsp;&nbsp;Sign Up/ Log in &nbsp;&nbsp;</button>
+
+            <img src="./profile-img.png" class="nav-profile-img">
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="main-content">
+
+            <div class="create-post">
+                <div class="create-post-input">
+                    <img src="./profile-img.png">
+                    <textarea id="post-input" rows="2" placeholder="Ask your question"></textarea>
+                </div>
+
+                <div class="create-post-links">
+                    <li><i class="fa-solid fa-camera"></i>Photo</li>
+                    <li><i class="fa-solid fa-video"></i>Video</li>
+                    <li><i class="fa-solid fa-paperclip"></i>File</li>
+                    <li id="post-btn">Post</li>
+                </div>
+            </div>
+
+            <div class="sort-by">
+                <hr>
+                <p>Sort by: <span>Latest </span></p>
+            </div>
+
+            <div class="posts">
+                <div class="post">
+                    <div class="post-info">
+                        <img src="./profile-img.png">
+                        <div>
+                            <h1>Why should I join GDSC?</h1>
+                            <small>Answered by User101</small>
+                        </div>
+                    </div>
+    
+                    <p>
+                        GDSC is a google backed global community: of the developers, by the developers 
+                        and for the developers. You should join the Google Developer Student Club of your college 
+                        to build connections with student developers across the world. Most importantly, 
+                        you will stay updated of opportunities like competitions, internships, scholarships, 
+                        hackathons and much more.
+                    </p>
+    
+                    <div class="post-activity">
+                        <div>
+                            <i class="fa-regular fa-thumbs-up upvote"></i>
+                            <span>Upvote</span>                   
+                        </div>
+    
+                        <div>
+                            <i class="fa-regular fa-thumbs-down downvote"></i>
+                            <span>Downvote</span>
+                        </div>
+    
+                        <div>
+                            <i class="fa-regular fa-comment"></i>
+                            <span>Comment</span>
+                        </div>
+    
+                        <div>
+                            <i class="fa-solid fa-share-nodes"></i>
+                            <span>Share</span>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="post">
+                    <div class="post-info">
+                        <img src="./profile-img.png">
+                        <div>
+                            <h1>Why should I join GDSC?</h1>
+                            <small>Answered by User102</small>
+                        </div>
+                    </div>
+    
+                    <p>
+                        You should join GDSC to learn latest technologies, participate in contests, receive 
+                        guidance/ mentorship from the seniors. Apart from this, you will get to make projects, 
+                        work for non-profits and even contribute to open source. So, if you are someone who is 
+                        dedicated, determined and passionate, you should definitely consider joining GDSC. 
+                    </p>
+    
+                    <div class="post-activity">
+                        <div>
+                            <i class="fa-regular fa-thumbs-up upvote"></i>
+                            <span>Upvote</span>                   
+                        </div>
+    
+                        <div>
+                            <i class="fa-regular fa-thumbs-down downvote"></i>
+                            <span>Downvote</span>
+                        </div>
+    
+                        <div>
+                            <i class="fa-regular fa-comment"></i>
+                            <span>Comment</span>
+                        </div>
+    
+                        <div>
+                            <i class="fa-solid fa-share-nodes"></i>
+                            <span>Share</span>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="post">
+                    <div class="post-info">
+                        <img src="./profile-img.png">
+                        <div>
+                            <h1>Should I post my projects on public platforms?</h1>
+                            <small>Answered by User104</small>
+                        </div>
+                    </div>
+    
+                    <p>
+                        You should post your projects on public platforms like github so that people can 
+                        view your projects, suggest improvements and learn. Just make sure not to leave 
+                        sensitive information like passwords, private api keys etc and you are good to go. 
+                        Posting the projects give you a chance to showcase your skills publicly. You can check 
+                        out my portfolio website from the following link. 
+                        <br>
+                        <a href="https://krishbansal10.github.io/Portfolio-Website/">Click Here</a>
+                    </p>
+    
+                    <div class="post-activity">
+                        <div>
+                            <i class="fa-regular fa-thumbs-up upvote"></i>
+                            <span>Upvote</span>                   
+                        </div>
+    
+                        <div>
+                            <i class="fa-regular fa-thumbs-down downvote"></i>
+                            <span>Downvote</span>
+                        </div>
+    
+                        <div>
+                            <i class="fa-regular fa-comment"></i>
+                            <span>Comment</span>
+                        </div>
+    
+                        <div>
+                            <i class="fa-solid fa-share-nodes"></i>
+                            <span>Share</span>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="post">
+                    <div class="post-info">
+                        <img src="./profile-img.png">
+                        <div>
+                            <h1>How to improve my coding skills?</h1>
+                            <small>Answered by User106</small>
+                        </div>
+                    </div>
+    
+                    <p>
+                        To improve your coding skills, you should first focus on only one language and then 
+                        master the basics of the language first. Then, you should start solving questions on 
+                        daily basis from platforms like leetcode. The most important thing is to be consistent 
+                        and never give up.
+                    </p>
+    
+                    <div class="post-activity">
+                        <div>
+                            <i class="fa-regular fa-thumbs-up upvote"></i>
+                            <span>Upvote</span>                   
+                        </div>
+    
+                        <div>
+                            <i class="fa-regular fa-thumbs-down downvote"></i>
+                            <span>Downvote</span>
+                        </div>
+    
+                        <div>
+                            <i class="fa-regular fa-comment"></i>
+                            <span>Comment</span>
+                        </div>
+    
+                        <div>
+                            <i class="fa-solid fa-share-nodes"></i>
+                            <span>Share</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-sidebar">
+            <div class="sidebar-ques">
+                <i class="fa-solid fa-chart-simple"></i>
+
+                <h3>Popular Questions</h3>
+
+                <a href="#">What are hackathons and how to participate in them?</a>
+                <span>Asked 23 min ago</span>
+
+                <a href="#">What is the difference between HTML4 and HTML5?</a>
+                <span>Asked 1 hours ago</span>
+
+                <a href="#">How to score good cgpa in college exams?</a>
+                <span>Asked 4 hours ago</span>
+
+                <a href="#">What are some common misunderstood HTML and CSS properties?</a>
+                <span>Asked 5 hour ago</span>
+
+                <a href="#">What are some good books that you would recommend a student to read?</a>
+                <span>Asked 7 hours ago</span>
+
+                <a href="#" class="read-more-link">Read More</a>
+            </div>
+
+            <div class="sidebar-useful-links">
+                <a href="#">About</a>
+                <a href="#">Accessibility</a>
+                <a href="#">Help Center</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Get The App</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

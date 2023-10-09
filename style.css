@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f0f2f5;
+    color: #5f5f5f;
+}
+
+a {
+    text-decoration: none;
+    color: #5f5f5f;
+}
+
+a.active-link, a:hover {
+    color: #045be6;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    padding: 6px 6%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    width: 50px;
+    margin-right: 15px;
+    display: block;
+}
+
+.search-box {
+    background: #f0f2f5;
+    width: 250px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    margin-right: 20px;
+}
+
+.search-box i {
+    width: 14px;
+}
+
+.search-box input {
+    width: 100%;
+    background: transparent;
+    padding: 8px;
+    outline: none;
+    border: 0;
+}
+
+.navbar ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 10px;
+}
+
+.navbar ul li a {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    margin: 5px 8px;
+    padding-right: 2.5px;
+    position: relative;
+}
+
+.navbar ul li a::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background: #045be6;
+    position: absolute;
+    bottom: -15px;
+    transition: width 0.3s;
+}
+
+.navbar ul li a:hover::after, 
+.navbar ul li a.active-link::after{
+    width: 100%;
+}
+
+.navbar ul li a i {
+    width: 25px;
+}
+
+.navbar-right {
+    display: flex;
+}
+
+.navbar button {
+    background: #045be6;
+    color: #fff;
+    margin-right: 25px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.nav-profile-img {
+    width: 40px;
+    border-radius: 50%;
+    display: block;
+    cursor: pointer;
+    position: relative;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    padding: 20px 4%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.right-sidebar {
+    margin-top: 1.7rem;
+    flex-basis: 30%;
+    align-self: flex-start;
+    position: sticky;
+    top: 100px;
+}
+
+.sidebar-ques {
+    background: #fff;
+    padding: 10px 25px;
+}
+
+.sidebar-ques i {
+    width: 15px;
+    float: right;
+    margin-top: 15px;
+}
+
+.sidebar-ques h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin: 10px 0px 30px;
+}
+
+.sidebar-ques a {
+    display: block;
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: -5px;
+}
+
+.sidebar-ques span {
+    font-size: 13px;
+}
+
+.sidebar-ques .read-more-link {
+    color: #045be6;
+    font-weight: 500;
+    margin: 15px 0px 10px;
+}
+
+.sidebar-useful-links {
+    margin-top: 2.5rem;
+    padding: 10px 25px;
+    text-align: center;
+}
+
+.sidebar-useful-links a {
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 20px;
+}
+
+.main-content {
+    flex-basis: 60%;
+}
+
+.create-post {
+    margin-top: 1.85rem;
+    background: #fff;
+}
+
+.create-post-input {
+    padding: 10px 25px 5px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.create-post-input img {
+    width: 35px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.create-post-input textarea {
+    width: 100%;
+    border: 0;
+    outline: 0;
+    resize: none;
+    background: transparent;
+    margin-top: 8px;
+}
+::placeholder {
+    font-weight: 500;
+}
+
+.create-post-links {
+    display: flex;
+    align-self: flex-start;
+}
+
+.create-post-links li {
+    list-style: none;
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    flex-basis: 25%;
+    height: 40px;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.create-post-links li i {
+    width: 15px;
+    margin-right: 5px;
+}
+
+.create-post-links li:last-child {
+    background: #045be6;
+    color: #fff;
+    border-top: 0;
+    border-right: 0;
+}
+
+.sort-by {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.sort-by hr {
+    flex: 1;
+    border: 0;
+    height: 1px;
+    background: #ccc;
+}
+
+.sort-by p {
+    font-size: 13px;
+    padding-left: 5px;
+}
+
+.sort-by p span {
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.post {
+    background: #fff;
+    padding: 20px 25px 5px;
+    margin: 5px 0px 45px;
+}
+
+.post-info {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.post-info img {
+    width: 35px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.post-info h1 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+}
+
+.post-info small {
+    display: block;
+    margin-bottom: -2px;
+}
+
+.post p {
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.post p a {
+    color: #045be6;
+}
+
+.post-activity {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 0;
+}
+
+.post-activity div {
+    display: flex;
+    align-items: center;
+}
+
+.post-activity i {
+    width: 22px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 925px) {
+    .search-box {
+        background: transparent;
+        width: auto;
+        padding: 0;
+    }
+
+    .search-box input {
+        width: 0;
+        padding: 0;
+    }
+
+    .navbar-left ul li a {
+        padding-right: 0;
+        margin: 5px;
+    }
+
+    .nav-profile-img {
+        width: 30px;
+    }
+
+    .container {
+        padding: 15px 3%;
+    }
+
+    .right-sidebar {
+        flex-basis: 78%;
+        position: relative;
+        top: unset;
+    }
+
+    .main-content {
+        flex-basis: 85%;
+    }
+}
+
+@media screen and (max-width: 645px) {
+    .navbar-left ul li a span {
+        display: none;
+    }
+
+    .main-content {
+        flex-basis: 100%;
+    }
+}
+
+@media screen and (max-width: 445px) {
+    .navbar-right button {
+        display: none;
+    }
+
+    .post-activity div span {
+        display: none;
+    }
+}
