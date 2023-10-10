@@ -41,6 +41,18 @@ const postContent = () => {
                     <small>Asked by Anonymous</small>
                 </div>
             </div>
+
+            <div class="post-activity">
+                <div>
+                    <i class="fa-solid fa-reply"></i>
+                    <span>Answer</span>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-share-nodes"></i>
+                    <span>Share</span>
+                </div>
+            </div>
         </div>`);
 
         postInput.value = "";
